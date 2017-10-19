@@ -1,0 +1,9 @@
+.slider-container {
+  max-width: 550px !important;
+  width: 100%;
+  text-align: center;
+}
+
+.large-symbol {
+  font-size: 250px;
+}

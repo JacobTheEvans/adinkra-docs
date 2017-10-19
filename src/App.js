@@ -1,8 +1,8 @@
 import React from "react";
 // import Home from "./components/Home";
 import Navbar from "./components/Navbar";
+import Home from "./components/Home";
 import {Route, HashRouter, Switch} from "react-router-dom";
-
 
 //Design wise keep in mine my favorite docs
 //https://expressjs.com/
@@ -11,7 +11,11 @@ import {Route, HashRouter, Switch} from "react-router-dom";
 class App extends React.Component {
   render() {
     return (
-      <Navbar />
+      <div>
+        <Navbar/>
+        <Home />
+      </div>
+
     )
   }
 }
