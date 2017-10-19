@@ -10,7 +10,8 @@ const settings = {
   slidesToShow: 1,
   slidesToScroll: 1,
   autoplay: true,
-  pauseOnHover: false
+  pauseOnHover: false,
+  arrows: false
 };
 
 class SliderCustom extends React.Component {

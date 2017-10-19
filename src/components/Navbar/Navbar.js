@@ -10,7 +10,7 @@ class Navbar extends React.Component {
         <a href="#" className="brand">Adinkra Symbols</a>
         <ul className="nav-items">
           <li>
-            <a href="#">Vanilla</a>
+            <a href="#">Vanilla HTML/CSS</a>
           </li>
           <li>
             <a href="#">React Component</a>
@@ -28,7 +28,7 @@ class Navbar extends React.Component {
           <DropdownContent>
             <ul className="mobile-nav">
               <li>
-                <a href="#">Vanilla</a>
+                <a href="#">Vanilla HTML/CSS</a>
               </li>
               <li>
                 <a href="#">React Component</a>
