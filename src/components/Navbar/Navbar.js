@@ -1,22 +1,23 @@
 import React from "react";
 import FontAwesome from "react-fontawesome";
 import Dropdown, {DropdownTrigger, DropdownContent} from "react-simple-dropdown";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 class Navbar extends React.Component {
   render() {
     return (
       <nav className="navbar">
-        <a href="#" className="brand">Adinkra Symbols</a>
+        <Link to="/" className="brand">Adinkra Symbols</Link>
         <ul className="nav-items">
           <li>
-            <a href="#">Vanilla HTML/CSS</a>
+            <Link to="/vanilla">Vanilla HTML/CSS</Link>
           </li>
           <li>
-            <a href="#">React Component</a>
+            <Link to="/">React Component</Link>
           </li>
           <li>
-            <a href="#">Symbols</a>
+            <Link to="/">Symbols</Link>
           </li>
         </ul>
         <Dropdown className="dropdown-area" ref="dropdown">
@@ -28,13 +29,13 @@ class Navbar extends React.Component {
           <DropdownContent>
             <ul className="mobile-nav">
               <li>
-                <a href="#">Vanilla HTML/CSS</a>
+                <Link to="/vanilla">Vanilla HTML/CSS</Link>
               </li>
               <li>
-                <a href="#">React Component</a>
+                <Link to="/">React Component</Link>
               </li>
               <li>
-                <a href="#">Symbols</a>
+                <Link to="/">Symbols</Link>
               </li>
             </ul>
           </DropdownContent>

@@ -5,6 +5,10 @@ body, html {
   width: 100%;
 }
 
+p {
+  font-size: 18px;
+}
+
 * {
   box-sizing: border-box;
 }

@@ -1,5 +1,6 @@
 import React from "react";
-import Slider from "../Slider";
+import { Link } from "react-router-dom";
+import Slider from "../../components/Slider";
 import "./Home.css";
 
 class Home extends React.Component {
@@ -9,9 +10,9 @@ class Home extends React.Component {
         <Slider/>
         <h1>Adinkra Symbols</h1>
         <div className="menu">
-          <a href="#">Explore the Symbols</a>
-          <a href="#">Vanilla HTML/CSS</a>
-          <a href="#">React Component</a>
+          <Link to="/">Explore the Symbols</Link>
+          <Link to="/vanilla">Vanilla HTML/CSS</Link>
+          <Link to="/">React Component</Link>
         </div>
       </section>
     )

@@ -1,8 +1,8 @@
 import React from "react";
-// import Home from "./components/Home";
 import Navbar from "./components/Navbar";
-import Home from "./components/Home";
 import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import Vanilla from "./pages/Vanilla";
 import {Route, HashRouter, Switch} from "react-router-dom";
 
 //Design wise keep in mine my favorite docs
@@ -15,6 +15,7 @@ const Root = () => (
       <Navbar/>
       <Switch>
         <Route exact path="/" component={Home}/>
+        <Route exact path="/vanilla" component={Vanilla}/>
       </Switch>
       <Footer />
     </div>
