@@ -19,8 +19,8 @@ class SliderCustom extends React.Component {
     return (
       <div className="slider-container">
         <Slider {...settings}>
-          {genRandomSymbols(15).map((item) => (
-            <div className="large-symbol">
+          {genRandomSymbols(15).map((item, index) => (
+            <div className="large-symbol" key={index + item}>
               <Adinkra name={item}/>
             </div>
           ))}

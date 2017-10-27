@@ -12,7 +12,7 @@ class Home extends React.Component {
         <div className="menu">
           <Link to="/">Explore the Symbols</Link>
           <Link to="/vanilla">Vanilla HTML/CSS</Link>
-          <Link to="/">React Component</Link>
+          <Link to="/react-component">React Component</Link>
         </div>
       </section>
     )

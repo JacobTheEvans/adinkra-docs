@@ -26,3 +26,7 @@ a:hover {
 button:focus {
   outline: 0;
 }
+
+pre {
+  margin: 20px 0px 30px 0px !important;
+}

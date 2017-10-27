@@ -1,33 +1,66 @@
 import React from "react";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { atelierCaveLight } from "react-syntax-highlighter/dist/styles";
-import "./Vanilla.css";
+import "./ReactComponent.css";
 
-class Vanilla extends React.Component {
+class ReactComponent extends React.Component {
   render() {
     return (
-      <section className="vanilla-content">
+      <section className="react-component-content">
 
         <section className="doc-section">
-          <h2>Adinkra Symbols Font</h2>
-          <p>The Adinkra Symbols Font is made up of scalable vector icons that can change color, size, padding and anything else that can be done with CSS.</p>
+          <h2>React Adinkra</h2>
+          <p>The React component wrapper for the Adinkra Vector scalable vector icons. Can be styled using any CSS properites using className and style properites.</p>
         </section>
 
         <section className="doc-section">
           <h3>How to use it</h3>
-          <p>To use the Adinkra Symbols in a website simply include the CDN link in the head of your HTML</p>
+          <p>To use the Adinkra Symbols in a website you must include the CDN link in the head of your HTML</p>
+
           <SyntaxHighlighter language="html" style={atelierCaveLight} customStyle={{fontSize: "16px"}}>
             &lt;link rel="stylesheet" href="https://cdn.rawgit.com/JacobTheEvans/adinkra/c54b4e0e/src/adinkra.css"&gt;
           </SyntaxHighlighter>
-        </section>
 
-        <section className="doc-section">
-          <h3>Examples</h3>
-          <p>Examples on how to use this library can be found below</p>
-          <ul className="link-list">
-            <li><a href="https://github.com/JacobTheEvans/adinkra/tree/master/examples/local">Local example</a></li>
-            <li><a href="https://github.com/JacobTheEvans/adinkra/tree/master/examples/local">CDN example</a></li>
-          </ul>
+          <p>Then install the react-adinkra package using npm</p>
+
+          <SyntaxHighlighter language="terminal" style={atelierCaveLight} customStyle={{fontSize: "16px"}}>
+            npm install react-adinkra
+          </SyntaxHighlighter>
+
+          <p>Then import the Adinkra component and use it your project</p>
+
+          <SyntaxHighlighter language="es6" style={atelierCaveLight} customStyle={{fontSize: "16px"}}>
+{`import React from "react";
+import  Adinkra  from "react-adinkra";
+
+class App extends React.Component
+  render() {
+    return (
+      <Adinkra name="asase-ye-duru"/>
+    )
+  }
+}
+
+export default App;`}
+          </SyntaxHighlighter>
+
+          <p>If you would like to style the Adinkra Symbol you can use className or style properites.</p>
+
+          <SyntaxHighlighter language="es6" style={atelierCaveLight} customStyle={{fontSize: "16px"}}>
+{`import React from "react";
+import { Adinkra } from "react-adinkra";
+import "./App.css";
+
+class App extends React.Component {
+  render() {
+    return (
+      <Adinkra className="large-icon" style={{color: "red"}} name="asase-ye-duru"/>
+    )
+  }
+}
+
+export default App;`}
+          </SyntaxHighlighter>
         </section>
 
         <section className="doc-section">
@@ -59,4 +92,4 @@ class Vanilla extends React.Component {
   }
 }
 
-export default Vanilla;
+export default ReactComponent;

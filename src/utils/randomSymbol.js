@@ -20,7 +20,6 @@ let getRandomSymbol = (names) => {
 let genRandomSymbols = (amount) => {
   let result = [];
   let names = getNames();
-  console.log(names);
   for(var i = 0; i < amount; i++) {
     let temp = getRandomSymbol(names);
     if(result.indexOf(result) === -1) {

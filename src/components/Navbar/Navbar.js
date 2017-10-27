@@ -14,7 +14,7 @@ class Navbar extends React.Component {
             <Link to="/vanilla">Vanilla HTML/CSS</Link>
           </li>
           <li>
-            <Link to="/">React Component</Link>
+            <Link to="/react-component">React Component</Link>
           </li>
           <li>
             <Link to="/">Symbols</Link>
@@ -32,7 +32,7 @@ class Navbar extends React.Component {
                 <Link to="/vanilla">Vanilla HTML/CSS</Link>
               </li>
               <li>
-                <Link to="/">React Component</Link>
+                <Link to="/react-component">React Component</Link>
               </li>
               <li>
                 <Link to="/">Symbols</Link>

@@ -1,0 +1,27 @@
+.react-component-content {
+  max-width: 100%;
+  min-height: 100vh;
+  padding: 0px 30px;
+  padding-top: 70px;
+}
+
+.react-component-content h2, .react-component-content h3 {
+  margin: 7px 0;
+  color: #353535;
+}
+
+.react-component-content h2 {
+  font-size: 26px;
+}
+
+.react-component-content h3 {
+  font-size: 22px;
+}
+
+.doc-section {
+  margin: 50px 0px;
+}
+
+.link-list li a {
+  font-size: 18px;
+}
