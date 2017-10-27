@@ -42,10 +42,9 @@
   border-color: rebeccapurple;
 }
 
-
 @media screen and (max-width: 765px) {
   .symbol-box {
     width: 48%;
-    min-height: 250px; 
+    min-height: 250px;
   }
 }

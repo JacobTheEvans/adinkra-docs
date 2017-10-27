@@ -79,14 +79,14 @@
 
 .mobile-nav {
   list-style-type: none;
-  padding: 5px 10px;;
+  padding: 5px 10px;
+  ;
 }
 
 .mobile-nav li {
   padding: 14px 0px;
   font-size: 16px;
 }
-
 
 @media screen and (max-width: 765px) {
   .mobile-toggler {
