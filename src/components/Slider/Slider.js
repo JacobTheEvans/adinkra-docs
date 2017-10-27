@@ -31,7 +31,3 @@ class SliderCustom extends React.Component {
 }
 
 export default SliderCustom;
-
-//Grand symbol that changes every 25 seconds
-//Adinkra Symbols
-//Symbols --- Install

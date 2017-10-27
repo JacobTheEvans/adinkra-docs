@@ -17,7 +17,7 @@ class Navbar extends React.Component {
             <Link to="/react-component">React Component</Link>
           </li>
           <li>
-            <Link to="/">Symbols</Link>
+            <Link to="/symbols">Symbols</Link>
           </li>
         </ul>
         <Dropdown className="dropdown-area" ref="dropdown">
@@ -35,7 +35,7 @@ class Navbar extends React.Component {
                 <Link to="/react-component">React Component</Link>
               </li>
               <li>
-                <Link to="/">Symbols</Link>
+                <Link to="/symbols">Symbols</Link>
               </li>
             </ul>
           </DropdownContent>

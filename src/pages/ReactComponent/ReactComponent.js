@@ -31,7 +31,7 @@ class ReactComponent extends React.Component {
 
           <SyntaxHighlighter language="es6" style={atelierCaveLight} customStyle={{fontSize: "16px"}}>
 {`import React from "react";
-import  Adinkra  from "react-adinkra";
+import { Adinkra } from "react-adinkra";
 
 class App extends React.Component
   render() {

@@ -12,7 +12,7 @@ module.exports = [
     "translation": "Sword of war",
     "meaning": "Courage, valor, and heroism",
     "keywords": [
-      "Courage", "valor", "heroism"
+      "courage", "valor", "heroism"
     ],
     "description": "The crossed swords were a popular motif in the heraldic shields of many former Akan states. In addition to recognizing courage and valor, the swords can represent legitimate state authority."
   }, {
@@ -111,7 +111,7 @@ module.exports = [
   }, {
     "name": "boa-me-na-me-mmoa-wo",
     "translation": "Help me and let me help you",
-    "meaning": "Symbol of cooperation and interdependence",
+    "meaning": "Cooperation and interdependence",
     "keywords": [
       "cooperation", "interdependence"
     ],
@@ -187,7 +187,7 @@ module.exports = [
   }, {
     "name": "epa",
     "translation": "Handcuffs",
-    "meaning": "Law and justice, slavery and captivity",
+    "meaning": "Law, justice, slavery and captivity",
     "keywords": [
       "law", "justice", "slavery", "captivity"
     ],
@@ -241,7 +241,7 @@ module.exports = [
   }, {
     "name": "nsoromma",
     "translation": "Child of the heavens",
-    "meaning": "guardianship",
+    "meaning": "Guardianship",
     "keywords": ["guardianship"],
     "description": "A reminder that God is the father and watches over all people."
   }, {
@@ -442,12 +442,6 @@ module.exports = [
       "hope", "providence", "faith"
     ],
     "description": "A symbol to remind those that through god we will all live."
-  }, {
-    "name": "osram-ne-nsoromma",
-    "translation": "The Moon and the Star",
-    "meaning": "The harmony that exists in the bonding between a man and a woman",
-    "keywords": ["harmony"],
-    "description": "The North Star has a deep love for marriage. She is always in the sky waiting for the return of the moon, her husband."
   }, {
     "name": "nkyimu",
     "translation": "The crossed divisions made on adinkra cloth before stamping",

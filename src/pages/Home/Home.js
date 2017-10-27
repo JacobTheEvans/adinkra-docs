@@ -10,7 +10,7 @@ class Home extends React.Component {
         <Slider/>
         <h1>Adinkra Symbols</h1>
         <div className="menu">
-          <Link to="/">Explore the Symbols</Link>
+          <Link to="/symbols">Explore the Symbols</Link>
           <Link to="/vanilla">Vanilla HTML/CSS</Link>
           <Link to="/react-component">React Component</Link>
         </div>
