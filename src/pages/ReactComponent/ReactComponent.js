@@ -10,7 +10,7 @@ class ReactComponent extends React.Component {
 
         <section className="doc-section">
           <h2>React Adinkra</h2>
-          <p>The React component wrapper for the Adinkra Vector scalable vector icons. Can be styled using any CSS properites using className and style properites.</p>
+          <p>The React component wrapper for the Adinkra Vector scalable vector icons. All icons can be styled with any CSS atrrubites using className and style properites.</p>
         </section>
 
         <section className="doc-section">

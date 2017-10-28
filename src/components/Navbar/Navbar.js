@@ -1,7 +1,7 @@
 import React from "react";
 import FontAwesome from "react-fontawesome";
 import Dropdown, {DropdownTrigger, DropdownContent} from "react-simple-dropdown";
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 import "./Navbar.css";
 
 class Navbar extends React.Component {
@@ -29,13 +29,13 @@ class Navbar extends React.Component {
           <DropdownContent>
             <ul className="mobile-nav">
               <li>
-                <Link to="/vanilla">Vanilla HTML/CSS</Link>
+                <Link to="/vanilla" onClick={() => this.refs.dropdown.hide()}>Vanilla HTML/CSS</Link>
               </li>
               <li>
-                <Link to="/react-component">React Component</Link>
+                <Link to="/react-component" onClick={() => this.refs.dropdown.hide()}>React Component</Link>
               </li>
               <li>
-                <Link to="/symbols">Symbols</Link>
+                <Link to="/symbols" onClick={() => this.refs.dropdown.hide()}>Symbols</Link>
               </li>
             </ul>
           </DropdownContent>

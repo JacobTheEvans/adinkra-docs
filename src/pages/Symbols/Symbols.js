@@ -22,7 +22,7 @@ class Symbols extends React.Component {
         </div>
 
         <div className="symbols-container">
-          {this.genSymbolBoxes()}
+          {this.props.filteredData.length > 0 ? this.genSymbolBoxes() : <p className="search-error-message">No symbols matched your search query</p>}
         </div>
 
       </section>
