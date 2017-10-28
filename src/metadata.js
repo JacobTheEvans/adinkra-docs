@@ -142,7 +142,7 @@ module.exports = [
     "description": "This symbol represents intelligence and ingenuity."
   }, {
     "name": "denkyem",
-    "translation": "crocodile",
+    "translation": "Crocodile",
     "meaning": "Adaptability",
     "keywords": ["adaptability"],
     "description": "The crocodile lives in the water, yet breathes the air, demonstrating an ability to adapt to circumstances."
@@ -191,7 +191,7 @@ module.exports = [
     "keywords": [
       "law", "justice", "slavery", "captivity"
     ],
-    "description": "Adolph Agbo, in 'Values of Adinkra Symbols' notes that handcuffs were introduced in Africa as a result of the slave trade, and later became popular among chiefs in cuffing offenders of the law. 'The symbol reminds offenders of the uncompromising nature of the law. It however discourages all forms of slavery.'"
+    "description": "The symbol reminds offenders of the uncompromising nature of the law. It however discourages all forms of slavery."
   }, {
     "name": "ese-ne-tekrema",
     "translation": "The teeth and the tongue",

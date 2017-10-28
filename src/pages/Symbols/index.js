@@ -6,7 +6,7 @@ class SymbolsContainer extends React.Component {
   constructor() {
     super();
     this.state = {
-      filteredData: metaData,
+      filteredData: this.filter("", metaData),
       searchInput: ""
     };
     this.handleInput = this.handleInput.bind(this);
@@ -14,22 +14,34 @@ class SymbolsContainer extends React.Component {
   }
   filter(searchTerm, data) {
     searchTerm = searchTerm.toLowerCase();
-    if(searchTerm.length < 3) {
-      return data;
+    if (searchTerm.length < 3) {
+      return data.sort((a, b) => {
+        return a.name.toLowerCase() < b.name.toLowerCase()
+          ? -1
+          : (a.name.toLowerCase() > b.name.toLowerCase())
+            ? 1
+            : 0;
+      });
     } else {
       return data.filter((item) => {
-        if(item.name.indexOf(searchTerm) !== -1 || item.name.replace(/-/g, " ").indexOf(searchTerm) !== -1) {
+        if (item.name.indexOf(searchTerm) !== -1 || item.name.replace(/-/g, " ").indexOf(searchTerm) !== -1) {
           return true;
         } else {
           var doesOccur = false;
-          for(let i = 0; i < item.keywords.length; i++) {
-            if(item.keywords[i].indexOf(searchTerm) !== -1) {
+          for (let i = 0; i < item.keywords.length; i++) {
+            if (item.keywords[i].indexOf(searchTerm) !== -1) {
               doesOccur = true;
               break;
             }
           }
           return doesOccur;
         }
+      }).sort((a, b) => {
+        return (a.name.toLowerCase() < b.name.toLowerCase())
+          ? -1
+          : (a.name.toLowerCase() > b.name.toLowerCase())
+            ? 1
+            : 0;
       });
     }
 
@@ -42,11 +54,8 @@ class SymbolsContainer extends React.Component {
     }));
   }
   render() {
-    return (
-      <Symbols {...this.state} handleInput={this.handleInput}/>
-    )
+    return (<Symbols {...this.state} handleInput={this.handleInput}/>)
   }
 }
-
 
 export default SymbolsContainer;

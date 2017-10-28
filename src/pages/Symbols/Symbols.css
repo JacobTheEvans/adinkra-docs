@@ -24,6 +24,7 @@
   text-align: center;
   border: 1px solid #ddd;
   transition: border-color 0.5s ease;
+  color: black !important;
 }
 
 .symbol-box h2 {
@@ -42,9 +43,16 @@
   border-color: rebeccapurple;
 }
 
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 785px) {
   .symbol-box {
     width: 48%;
+    min-height: 250px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .symbol-box {
+    width: 100%;
     min-height: 250px;
   }
 }
